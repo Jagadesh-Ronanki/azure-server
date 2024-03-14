@@ -3,7 +3,7 @@ import sql from "mssql";
 import express from 'express';
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 1337;
 
 dotenv.config();
 app.use(express.json());
