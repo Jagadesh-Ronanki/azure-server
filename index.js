@@ -3,7 +3,7 @@ import sql from "mssql";
 import express from 'express';
 
 const app = express();
-const PORT = process.env.PORT || 1337;
+const PORT = process.env.PORT || 5000;
 
 dotenv.config();
 app.use(express.json());
@@ -19,7 +19,6 @@ const config = {
   },
 };
 
-app.listen(PORT)
 
 // Function to read a person from the database
 async function read(id) {
