@@ -19,6 +19,8 @@ const config = {
   },
 };
 
+app.listen(PORT)
+
 // Function to read a person from the database
 async function read(id) {
   let pool;
