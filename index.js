@@ -6,9 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 dotenv.config();
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`)
- });
+app.use(express.json());
  
 
 // Configure SQL Server connection
